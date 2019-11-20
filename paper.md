@@ -8,7 +8,7 @@ frequency intervals, along side a sequence of rhythmic durations. In this
 project we will first explore ways in which to translate musical melodies into
 real-valued numerical sequences, and second we will study these sequences by
 applying familiar fractal dimension metrics in an attempt to explore fractal
-patterns in music and build insight into "fractal music" really means.
+patterns in music and build insight into what "fractal music" really means.
 
 <!-- Introduction -->
 
