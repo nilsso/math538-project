@@ -1,3 +1,4 @@
+import numpy as np
 import re
 
 note_name_pattern = re.compile('(\w)([sf]*)')
@@ -45,12 +46,8 @@ class Note:
         return '{},{},{}'.format(self.deg, self.octave, self.value)
 
     #! Subtraction operator
-    # Unconventionally this operator now returns a tuple of the absolute pitch
-    # difference and the rhythm difference
     def __sub__(self, other):
-        pitch_diff = abs((self.octave-other.octave)*12+(self.deg-other.deg))
-        rhythm_diff = abs(self.value-other.value)
-        return pitch_diff, rhythm_diff
+        return abs((self.octave-other.octave)*12+(self.deg-other.deg))
 
     #! Parse a note string
     # The format is '<note name>,<octave>,<rhythmic value>'
@@ -66,7 +63,16 @@ class Note:
 # Converts a sequence of note strings to a sequence of absolute pitch
 # differences and rhythm differences.
 def melody_to_seqs(vals):
-    a = ([Note.parse(note) for note in vals])
-    a, b = a[1:], a[:-1]
-    a, b = map(list, zip(*[b[i]-a[i] for i in range(len(a))]))
-    return a, b
+    notes = ([Note.parse(note) for note in vals])
+    # Couple of constants
+    n = len(notes)-1
+    M = max(notes, key=lambda n: n.value).value
+    # Construct pitch sequence
+    pitch_seq = np.zeros(len(notes)-1, dtype=int)
+    for i in range(1, len(notes)-1):
+        pitch_seq[i] = notes[i]-notes[i-1]+pitch_seq[i-1]
+    # Construct rhythm sequence
+    rhythm_seq = pitch_seq.copy()
+    for i in range(1, len(notes)-1):
+        rhythm_seq[i] = rhythm_seq[i-1] + notes[i].value // M
+    return pitch_seq, rhythm_seq

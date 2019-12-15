@@ -1,3 +1,7 @@
+---
+header-includes:
+   \usepackage{amsmath, amssymb, xfrac}
+---
 <!--
 present a 20-25 minutes slide or power point presentation that will be judged by
 the rest of the class, the instructor and other faculty members that will attend
@@ -36,3 +40,16 @@ patterns in music and build insight into what "fractal music" really means.
 <!-- Melodic sequences -->
 
 <!-- Fractal dimension -->
+
+Earliest attempts of measuring fracticality in music performed by
+Richard Voss and John Clarke
+indications of $\sfrac 1 f$ scaling.
+
+1. Motivic scaling
+2. Duration scaling
+3. Pitch-related scaling
+
+<!-- BWV 1009 -->
+
+Scaling
+: A
