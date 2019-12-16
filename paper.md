@@ -1,6 +1,10 @@
 ---
 header-includes:
-   \usepackage{amsmath, amssymb, xfrac}
+    - \usepackage{amsmath}
+    - \usepackage{amssymb}
+    - \usepackage{xfrac}
+    - \usepackage{wasysym}
+    - \usepackage{harmony}
 ---
 <!--
 present a 20-25 minutes slide or power point presentation that will be judged by
@@ -59,9 +63,6 @@ dynamic changes.
 
 <!-- SECTION ------------------------------------------------------------- -->
 
-# Fractals
-
-# Fractals in music
 
 <!--
 - Talk about how Mandelbrot was interested in music
@@ -96,6 +97,70 @@ contain a minimum of two matching or similar regions in which the arrangement of
 elements either mirrors or imitates the structure of the object as a whole.” So,
 it is necessary that parts of a musical piece be similar to larger sections of
 the musical composition. 
+
+<!-- SECTION ------------------------------------------------------------- -->
+# A primer on music
+
+Before introducing the different ways in which fractal patterns arise in music
+it is essential that some basic building-blocks of music be introduced.
+
+## Pitch, intervals, and rhythm
+
+A single key on a piano, when struck, produces a single pitch. Pitch is one of
+the most fundamental properties of notes in music, but what exactly
+is pitch? The sound that is produced by the piano is really the combination of
+several strings vibrating, each producing different frequencies of sound.
+Together this combination forms the characteristic sound of the piano (also
+called timbre, the specific quality to the sound of, in this case, the piano). 
+The strongest frequency in this collection is called the fundamental frequency
+of the "note" being played, and to this frequency a name is assigned. In the
+case of a piano, and of all Western music, these frequency names come from the
+alphabet: A, B, C, D, E, F, and G. Though pitches are unique unto their
+frequency, some pitches are considered equivalent with respect to the ratio of
+their frequencies. For example, the pitch A4 (concert A) sounds at 440 cycles
+per second (hertz), while A5 sounds at 880 hertz: a ratio of 1:2.
+This ratio is called an octave, and thus we have names for distances between
+frequencies which we call \emph{intervals}. Within Western music notation there
+are a finite number of named intervals; here's a few: perfect octaves, perfect
+fifths, diminished fifths, augmented fourths (equivalent to diminished fifths),
+major thirds, minor thirds, etc. Between any two notes (and even between a note
+and itself) there is an interval between them. (These intervals between notes
+are the concern of a later section of this paper.)
+Back to octaves:
+despite having
+unique frequencies, any two pitches which are an interval of an octave apart (or
+multiple octaves apart, e.g. C2 and C5) from one another, are considered
+equivalent.
+Lastly,
+If you are familiar with the piano then you will know there are actually are
+more than seven keys in between octaves, twelve precisely. These are just
+smaller subdivisions of the frequency ranges between octaves.
+
+The other most fundamental property of notes is duration, also called rhythmic
+value (or just value). Music as listened to is inherently ephemeral: in the
+moments in which we experience music by listening to it, it exists, but then it
+is gone. How long we experience the sound of a pitch is called its duration,
+and we might measure the duration of a pitch by how long it is played in
+seconds. 
+Establishing a baseline duration is important in the composition of music; some
+pieces of music consist of pitches that are long in duration, while others
+consist of pitches that exist only for a split-second. But not all pitches need
+have the same duration, and so we have rhythm: the ratios between pitches in
+terms of duration. For example we might play one pitch for twice as long as the
+one before, and then next two pitches for a quarter as long.
+Like with pitch, different rhythmic values also have names within Western music
+notation, some of the most basic of which being whole notes $\Ganz$, half notes
+$\Halb$, quarter notes $\Vier$, and eighth notes $\Acht$. Notice that the names
+all have to do with fractions. A piece of music might set a baseline speed by
+stating that the duration of a quarter note should be a certain number of
+seconds---then the duration of a half note would be twice as long as the
+duration of the quarter note, a whole note four times as long, an eighth note
+half as long, a sixteenth note a quart as long, etc.
+
+It is these two fundamental properties that are a part of every note in a piece
+of music.
+
+## Intervals, melody and harmony
 
 <!-- SECTION ------------------------------------------------------------- -->
 ## Self-similarity scaling in music[^1]
@@ -140,20 +205,24 @@ data points are needed to assert a linear relationship"[^2].
 # Fractal and multifractal dimension
 
 <!-- SECTION ------------------------------------------------------------- -->
+
 # Structural scaling and motivic scaling: Bach and fractals
 
-There exist many folklore about Bach and his impressive talent. There is such a
-story about his short musical piece called "The Little Fugue". One day Bach was
-challenged to a compitition by a fellow well renowned organist of the time. Bach
-and the fellow showed up for the competition at a church to play the orga 
+There are many tales of Bach's impressive talents as a composer and virtuoso musician.A biographer of Bach's also recounts the time that Bach arrived to a town in Prussia as a stranger. Upon arrival King Frederick the Great invited him to the Royal Palace to try the new pianofortes. "After he had gone on for some time, he asked the King to give him a subject for a Fugue, in order to execute it immediately without any preparation."{H.T} Speaking about this same event, Douglas Hofstadter in his book Godel, Escher, Bach: An Eternal Golden Braid states, "the ten canons in the musical offering are among the most sophisticated canons Bach ever wrote. However, curiously enough, Bach himself never wrote them out in full. This was deliberate. They were posed as puzzles to King Frederick. It was a familiar musical game of the day to give a single theme, together with some more or less tricky hints, and to let the canon based on the theme be 'discovered' by someone else."{D.R} This shows that Bach truly incorporated math into his music and that his compositions were much more than a creative thought; that they contained a mathematical complexity that retained beauty. So, it is possible to see that his music contained fractal.
 
-The first part of the fifth movement, the "Bourrée", from
+H.T. David and A. Mendel, The Bach Reader, pp.305-306.
+D.R. Hofstadter, Godel, Escher, Bach: An Eternal Golden Braid (Basic Books, 1980).
+
+Specifically, The first part of the fifth movement, the "Bourrée", from
 Johann Sebastian Bach's Cello Suite No. 3 in C Major, BWV 1009.
 
-The paper <PAPER> by <AUTHORS> is dedicated entirely to examining the scaling
+The paper Structural Scaling of Bachs Cello Suite No.3 by Harlan Brothers is dedicated entirely to examining the scaling
 characteristics within this single section of music, and the paper "Multifractal
 analyses of music sequences" by Zhi-Yuan Su and Tzuyin Wu also takes a look at
 this very same section (along with two other musical examples).
+
+![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)
+
 
 ![Bourrée notation structure](./figures/bach_cello.png)
 
