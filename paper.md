@@ -217,6 +217,7 @@ A  | B  | C  | Total | Note
 
 
 ![Bulmer Time Series Plot](./figures/TimePlotPinkNoise.png)
+
 Time plot of pink noise (Bulmer)
 
 When graphing a time plot that was produced using the dice method created by Voss,
@@ -234,7 +235,8 @@ The formula above can be used to construct correlograms, a plot of autocorrelati
 against lag. This will give a visual into the autocorrelation structure of the
 noise.
 
-\includegraphics{CorrelogramForPinkNoise.png}
+![Bulmer Correlogram](./figures/CorrelogramForPinkNoise.png)
+
 Correlogram for pink noise (Bulmer)
 
 The correlogram above shows that the correlation over time does not disappear to
