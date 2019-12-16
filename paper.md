@@ -50,7 +50,12 @@ of “roughness”{TED}. Something that was smooth would be akin to time series 
 that looked like a smooth curve. A rough graph would look like a plot with many
 dynamic changes.  
 
+<!-- SECTION ------------------------------------------------------------- -->
+# A primer on music
 
+## Pitch, notes, rhythm
+
+## Intervals and melody
 
 <!-- SECTION ------------------------------------------------------------- -->
 
@@ -74,6 +79,8 @@ our eyes to guide us, how do we gain this perspective?”{ALMD} The question pos
 is an excellent one, and Brothers goes on to discuss that generally there are
 seven ways that fractals can appear in music.
 
+## Misconceptions
+
 Before we discuss these seven ways, we would like to mention that there are
 several misconceptions as to what fractal music is, which Brothers discusses on
 his webpage{Brothers}. The most common misconception is that converting fractal
@@ -90,17 +97,8 @@ elements either mirrors or imitates the structure of the object as a whole.” S
 it is necessary that parts of a musical piece be similar to larger sections of
 the musical composition. 
 
-## Misconceptions
-
 <!-- SECTION ------------------------------------------------------------- -->
-# A primer on music
-
-## Pitch, notes, rhythm
-
-## Intervals and melody
-
-<!-- SECTION ------------------------------------------------------------- -->
-# Self-similarity scaling in music[^1]
+## Self-similarity scaling in music[^1]
 
 As a subject of research, fractals and self-similarity in music may be fairly
 niche, but there is no shortage of literature, new or old. One of the earliest
