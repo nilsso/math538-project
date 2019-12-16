@@ -167,6 +167,11 @@ this very same section (along with two other musical examples).
 - Expand on what pitch scaling is
 - Describe how Guapos and Nils provides an example of pitch scaling fracticality
 
+Stochasitc pitch scaling can be generated using a method that involves rolling a
+number of dice, and the sum of the dice gives a note that was assigned a number. 
+For example 7 could be assigned to the note D. Bulmer 
+
+
 A  | B  | C  | Total | Note
 -- | -- | -- | --    | --
 2  | 6  | 1  | 9     | C
