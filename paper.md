@@ -43,6 +43,14 @@ patterns in music and build insight into what "fractal music" really means.
 
 # Fractals in music
 
+Interest in the study of fractals in music was largely incited by famous
+polymath Benoit Mandelbrot, who also is credited with first using the term
+fractal.
+<!--
+- Talk about how Mandelbrot was interested in music
+- How Brothers was tasked to study scaling?
+-->
+
 ## Misconceptions
 
 <!-- SECTION ------------------------------------------------------------- -->
@@ -55,12 +63,15 @@ patterns in music and build insight into what "fractal music" really means.
 <!-- SECTION ------------------------------------------------------------- -->
 # Self-similarity scaling in music 
 
+As a subject of research, fractals and self-similarity in music may be fairly
+niche, but there is no shortage of literature, new or old. 
 One of the earliest attempts at mathematically quantifying musical
-self-similarity was conducted by Richard Voss and John Clarke. From their
-results they concluded that within genres of music a $\sfrac 1 f$ power-law
-scaling behavior is characteristic of musical components for pieces in the genre
-(though they were specifically concerned with the Baroque era compositions of
-J.S. Bach, or just "classical" in layman's terms).
+self-similarity was conducted by Richard Voss and John Clarke, and in 1975
+published "". From
+their results they concluded that within genres of music a $\sfrac 1 f$
+power-law scaling behavior is characteristic of musical components for pieces in
+the genre (though they were specifically concerned with the Baroque era
+compositions of J.S. Bach, or just "classical" in layman's terms).
 <!-- -->
 However, there may be many different ways in which measurable self-similarity
 within music can manifest; chapter 7 of the Mandelbrot text, written by
@@ -124,22 +135,24 @@ A  | B  | C  | Total | Note
 
 ## Limitations of the method
 
-The most dramatic limitation of this procedure is that it requires the musical
-material to be monophonic---only one note at a time---while the vast majority of
-modern music (and actually the majority of music since the 14th century) is
-polyphonic. Despite this, a piece of music containing simultaneous notes across
-simultaneous voices could potentially be reconstructed into standalone parts,
-where each roughly functions as standalone piece consisting of only a monophonic
-melody. Think of a Bach cantata for soprano, alto, tenor and bass four-part
-choir, where each voice is essentially its own piece, its own melody. On the
-other hand, not all music can be so simply reconstructed into parts. Even the
-Bach selection examined by Su and Wu (the Bourrée), despite being almost
-entirely monophonic, contains polyphony in measures 2, 4, and 28 (the last), but
-this may be an artifact of the editor, as some copies have a single G instead of
-the E chord. Either way, one can simplify a polyphonic melody by selecting a
-single constituent note whenever there's a simultaneous group of notes, as I did
-for simplifying the Bourrée.
+The most dramatic limitation of this procedure and this metric of scaling in
+general is that it requires the musical material to be monophonic---only one
+note at a time---while the vast majority of modern music (and actually the
+majority of music since the 14th century) is polyphonic. Despite this, a piece
+of music containing simultaneous notes across simultaneous voices could
+potentially be reconstructed into standalone parts, where each roughly functions
+as standalone piece consisting of only a monophonic melody. Think of a Bach
+cantata for soprano, alto, tenor and bass four-part choir, where each voice is
+essentially its own piece, its own melody. On the other hand, not all music can
+be so simply reconstructed into parts. Even the Bach selection examined by Su
+and Wu (the Bourrée), despite being almost entirely monophonic, contains
+polyphony in measures 2, 4, and 28 (the last), but this may be an artifact of
+the editor, as some copies have a single G instead of the E chord. Either way,
+one can simplify a polyphonic melody by selecting a single constituent note
+whenever there's a simultaneous group of notes, as I did for simplifying the
+Bourrée.
 
-![French Suite No. 5 in G Major, BWV 1009, III. Gavotte](./music/bwv816_gavotte.png)
+<!--![French Suite No. 5 in G Major, BWV 1009, III. Gavotte](./music/bwv816_gavotte.png)-->
 
-
+R. F. Voss and J. Clarke, $\sfrac 1 f$ noise in music and speec, *Nature*
+**258** (1975) 317-318.
