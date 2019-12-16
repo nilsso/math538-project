@@ -245,9 +245,30 @@ this very same section (along with two other musical examples).
 - Describe how Guapos and Nils provides an example of pitch scaling fracticality
 
 Stochasitc pitch scaling can be generated using a method that involves rolling a
-number of dice, and the sum of the dice gives a note that was assigned a number. 
-For example 7 could be assigned to the note D. Bulmer 
+number of dice, and the sum of the dice gives a note that was assigned a number.
+For example 7 could be assigned to the note D. Bulmer used six dice to generate
+a scale of notes that when listened to has a static like sound. The noise that is
+termed for this is white noise, which music that is considered white noise has an
+atroious sound to it due to the disconnection of flow when going from note to note.
+White noise is considered be too unpredictable, where brown noise is considered
+to be very predictable. Brown noise has a Brownian motion which can be see as
+being too predicitable because the notes have an erratic motion back and forth.
+White and brown noise are the two extremes for random music.
 
+Pink noise has been seen to achieve both of these extremes which brings a balance
+which is considered the $\frac{1}{f}$ noise. {Voss and Clarke(1978)} Achieving
+a true balance between these extremes is very difficult. {Mandelbrot(1971)} Pink
+noise has been seen to have a self-similiar process with a pattern that is
+long-range dependent and exhibits short-term randomness.
+
+Voss approximates pink noise using a variation of the dice method that was described
+earlier. Using n dice, for our experiment we used n = 3, we generated $2^{n}$ notes.
+the table below was constructed by rolling three dice that are labeled A, B, and C.
+We sum of the three dice and the total gave us a note which each note was assigned to
+a value. Binary digits were used to generate the next note which changes from row to
+row in the table. The table below is the results from our experiment. The notes
+below provide a stabbiliy in the sequence while haivng long-range dependence which
+is need to be considered pink noise.
 
 A  | B  | C  | Total | Note
 -- | -- | -- | --    | --
@@ -259,6 +280,37 @@ A  | B  | C  | Total | Note
 1  | 6  | 3  | 10    | D
 2  | 4  | 3  | 9     | C
 6  | 2  | 1  | 9     | C
+
+
+<!--![Music From Fractal Noise, Micheael Bulmer](./music/TimePlotPinkNoise.png)-->
+Time plot of pink noise (Bulmer)
+
+When graphing a time plot that was produced using the dice method created by Voss,
+we are able to see that the series of notes exhibit long-range dependence. There is
+more stability due to the high digits have less change.
+
+When describing noise we can use auocorrelation to describe the notion of music
+notes being "related" over time. Autocorrelation is composed of two data sets, $r_k$,
+which is the values in the noise sequence and k which is called the lag.
+
+$r_k = \frac{\sum_{t=1}^{N-k}(x_t - \overline{x}(x_{t+k - \overline{x}})}{\sum_{t=1}^{N}(X_t -
+\overline{x})^(2)}$
+
+The formula above can be used to construct correlograms, a plot of autocorrelation
+against lag. This will give a visual into the autocorrelation structure of the
+noise.
+
+\includegraphics{CorrelogramForPinkNoise.png}
+Correlogram for pink noise (Bulmer)
+
+The correlogram above shows that the correlation over time does not disappear to
+even over a longer period of time. Pink noise exhibits the 1/f phenomena which is
+attributed to the pitch scaling. We can see that that the extremes of pitch scaling
+can lead to some dissonance in sounds. When finding a balance in the scaling the
+results can began to exhibit fractal characteristics. The compositions of songs are
+reminiscent of the Koch snowflake which posess long-range dependence and short-term
+randomness which was observed in pink noise. The results is a composition that
+is self-similar which like snowflakes are considered fractals.
 
 <!-- SECTION ------------------------------------------------------------- -->
 # Melodic interval and duration scaling: implementing
