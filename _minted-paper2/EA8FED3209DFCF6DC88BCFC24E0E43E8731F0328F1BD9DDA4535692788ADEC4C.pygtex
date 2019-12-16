@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{notes} \PYG{o}{=} \PYG{p}{[} \PYG{l+s+s2}{\PYGZdq{}c\PYGZsq{}4\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}g\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}e8\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}c\PYGZdq{}} \PYG{p}{]}
+    \PYG{n}{M} \PYG{o}{=} \PYG{n}{Melody}\PYG{p}{(}\PYG{n}{notes}\PYG{p}{)}
+
+    \PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n}{M}\PYG{o}{.}\PYG{n}{notes}\PYG{p}{:}
+        \PYG{k}{print}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+\end{Verbatim}

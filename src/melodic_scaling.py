@@ -14,19 +14,19 @@ def mask(indices):
     return res
 
 #! Covering count $p_i(r)$
-def p_i(mask, N, i, r):
+def p_i(mask, i, r):
     a = max(i - r, 0)
     b = min(i + r, len(mask))
-    return sum(mask[a:b]) / N
+    return sum(mask[a:b])
 
 #! Calculate scaling for fixed i
-def scaling(mask, N, i=None):
+def scaling(mask, i=None):
     i = i or len(mask) // 2
     # "to avoid the boundary effect (since the sequence is finite in length),
     # the largest radius of the box is limited to 1/10 of the total length of
     # the sequence"
     rvals = np.arange(2, len(mask) // 10, dtype=int)
-    pvals = np.array([p_i(mask, N, i, r) for r in rvals])
+    pvals = np.array([p_i(mask, i, r) for r in rvals])
 
     log2_rvals = np.ma.log2(rvals)
     log2_pvals = np.ma.log2(pvals)
@@ -37,8 +37,8 @@ def scaling(mask, N, i=None):
     return z, i, log2_rvals, log2_pvals
 
 #! Plot scaling for fixed i
-def plot_scaling(mask, N, i=None, s="Replace me"):
-    z, i, log2_rvals, log2_pvals = scaling(mask, N, i)
+def plot_scaling(mask, i=None, s="Replace me"):
+    z, i, log2_rvals, log2_pvals = scaling(mask, i)
     a, _ = z
 
     # Linear regression
@@ -54,7 +54,7 @@ def plot_scaling(mask, N, i=None, s="Replace me"):
     plt.ylabel(r'$\log_2(p_i(r))$')
     plt.legend(loc='best')
 
-def plot_scaling2(mask, s):
+def plot_scaling2(mask, s="Replace me"):
     n = len(mask) // 10
     a, b = n, n*9
     ivals = np.arange(a, b)
@@ -75,6 +75,7 @@ notes = gossec_gavotte
 # notes = ['c8']*600
 # notes = ['c8'] + \
         # ['d', 'e', 'f', 'g', 'a', 'b', 'c'] * 20
+# notes = [ "c'4", "g", "e8", "c" ]
 M = Melody(notes)
 N = len(M.notes)
 
@@ -84,16 +85,23 @@ N = len(M.notes)
 I = pitch_intervals(M)
 R = rhythmic_intervals(M)
 
-# plt.scatter(I, np.ones(len(I)), s=2**2)
+plt.figure()
+plt.scatter(I, np.ones(len(I)), s=2**2)
+plt.savefig('figures/results01.png', dpi=450)
 # plt.scatter(R, np.ones(len(I)), s=2**2)
 
 I_mask = mask(I)
-R_mask = mask(R)
+# R_mask = mask(R)
 
 # print(I_mask)
 # print(R_mask)
 
-plot_scaling(I_mask, N, 300, 'Melody')
+plt.figure()
+plot_scaling(I_mask, 300, 'Melody')
+plt.savefig('figures/results02.png', dpi=450)
 # plot_scaling(R_mask, N, 'Rhythm')
-# plot_scaling2(I_mask, 'Melody')
-plt.show()
+
+plt.figure()
+plot_scaling2(I_mask, 'Melody')
+plt.savefig('figures/results03.png', dpi=450)
+# plt.show()

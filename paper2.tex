@@ -21,21 +21,27 @@
 
 \title{Fractal Patterns and Music}
 \date{MATH-538, December 2019}
-\author{Javier, Chris Benito, Nils Olsson}
+\author{Javier Anguiano, Chris Benito, Nils Olsson}
 
 \begin{document}
 \maketitle
 
 \section{Abstract}
 
-In this paper we explain the current state of fractals in music. We
-include a description of fractals and how they can be perceived in music. We
-discuss how the note frequencies follow a power law relation across many genres
-of western music. We present the Michael Bulmer’s technique for creating music
-that is close to true pink noise. There is also an overview of how fractals have
-occurred in musical compositions in the past, including the specific example in
-Bach’s Cello Suite No. 3. Then we created a program to perform dimension
-calculations of music.
+In this paper we will explore the history and some existing research in the area
+of fractals in music. We include a description of fractals and how they can be
+perceived in music, as well as a primer on pitch, rhythm, melody and harmony
+(the basic building-blocks of music). We discuss how the note frequencies follow
+a power law relation across many genres of western music. We present the Michael
+Bulmer’s technique for creating music that is close to true pink noise. There is
+also an overview of how fractals have occurred in musical compositions in the
+past, including the specific example in Bach’s Cello Suite No. 3. Then we
+attempted to reproduce the results of a paper in calculating a particular
+fractal dimension within a musical example.
+
+\begin{center}
+    \hrulefill{}
+\end{center}
 
 \section{Fractals}
 
@@ -94,12 +100,14 @@ specific quality to the sound of, in this case, the piano). The strongest
 frequency in this collection is called the fundamental frequency of the “note”
 being played, and to this frequency a name is assigned. In the case of a piano,
 and of all Western music, these frequency names come from the alphabet: A, B, C,
-D, E, F, and G. Though pitches are unique unto their frequency, some pitches are
+D, E, F, and G.
+
+Though pitches are unique unto their frequency, some pitches are
 considered equivalent with respect to the ratio of their frequencies. For
 example, the pitch A4 (concert A) sounds at 440 cycles per second (hertz), while
 A5 sounds at 880 hertz: a ratio of 1:2. This ratio is called an octave, and thus
 we have names for distances between frequencies which we call intervals. Within
-Western music notation there are a finite number of named intervals; here’s a
+Western music notation there are a finite number of named intervals; here are a
 few: perfect octaves, perfect fifths, diminished fifths, augmented fourths
 (equivalent to diminished fifths), major thirds, minor thirds, etc. Between any
 two notes (and even between a note and itself) there is an interval between
@@ -107,7 +115,9 @@ them, and is measured aptly by counting the number of keys of the piano it takes
 to get from one note to the other where these steps are called “semitones”. For
 example, the interval between any F and the nearest B on the piano consists of
 six semitones. As an aside, this interval is known as a tritone and is one of
-the most dissonant intervals producible on the piano. Returning to octaves,
+the most dissonant intervals producible on the piano.
+
+Returning to octaves,
 despite having unique frequencies, any two pitches which are an interval of an
 octave apart (or multiple octaves apart, e.g. C2 and C5) from one another, are
 considered equivalent. Lastly, If you are familiar with the piano then you will
@@ -122,18 +132,22 @@ is gone. How long we experience the sound of a pitch is called its duration, and
 we might measure the duration of a pitch by how long it is played in seconds.
 Establishing a baseline duration is important in the composition of music; some
 pieces of music consist of pitches that are long in duration, while others
-consist of pitches that exist only for a split-second. But not all pitches need
+consist of pitches that exist only for a split-second.
+
+However, not all pitches need
 have the same duration, and so we have rhythm: the ratios between pitches in
 terms of duration. For example we might play one pitch for twice as long as the
 one before, and the next two pitches for a quarter as long. Like with pitch,
 different rhythmic values also have names within Western music notation, some of
-the most basic of which being whole notes, half notes, quarter notes ♩, and
-eighth notes ♪. Notice that the names all have to do with fractions. A piece of
+the most basic of which being whole notes, half notes, quarter notes, and
+eighth notes. Notice that the names all have to do with fractions. A piece of
 music might set a baseline speed by stating that the duration of a quarter note
 should be a certain number of seconds—then the duration of a half note would be
 twice as long as the duration of the quarter note, a whole note four times as
 long, an eighth note half as long, a sixteenth note a quart as long, etc.
-It is these two fundamental properties that are a part of every note in a piece of music.
+
+In summary, it is these two fundamental properties, pitch and rhythmic value,
+that are a part of every note in a piece of music.
 
 \subsection{Melody and harmony}
 
@@ -453,6 +467,84 @@ within the sequence.
 
 \subsection{Reproduction of results}
 
+(All the material of this project can be found at
+\url{https://github.com/nilsso/math538-project}, including all source code and
+the paper itself.)
+
+The Python language was chosen for the attempt at reproducing the results in the
+Su and Wu paper, and the first stage was to develop a way to represent a melody
+in code. There is a plethora of music notation software out there in the world,
+but the especially niche \href{http://lilypond.org/}{LilyPond} system allows one
+to notate music in plain text. Due to familiarity with this system, LilyPond
+notation was adopted.
+
+First a few helper classes, \verb+Note+ and \verb+Melody+, were written to
+encapsulate the data about pitch and rhythmic values for notes and to
+encapsulate data about the notes in a melody, as well as facilitate the parsing
+of LilyPond notation (abbreviated Ly). In the end, constructing a melody can be
+accomplished like in the following example:
+
+\begin{minted}{python}
+    notes = [ "c'4", "g", "e8", "c" ]
+    M = Melody(notes)
+
+    for n in M.notes:
+        print(n)
+\end{minted}
+
+Which results in the formatted output:
+
+\begin{minted}{text}
+    C5 quarter-note
+    G4 quarter-note
+    E4 eighth-note
+    C4 eighth-note
+\end{minted}
+
+Then chosen from the three examples in the article was Gossec's \emph{Gavotte},
+which the melody was simplified and notated using the Ly format:
+
+\begin{minted}{py}
+notes = [
+        # 1
+        "a'8", "b", "a", "fis", "g", "a", "g", "e"
+        # 2
+        "d4", "b'", "d,2",
+        # 3
+        "g8", "a", "g", "e", "fis", "g", "fis", "d",
+        # etc...
+\end{minted}
+
+Finally functions for calculating the point distribution $p_i(r)$, the local Hölder
+exponent $\alpha$, and the Hölder variation $f(\alpha)$ were developed, as well
+as plotting utilities. The end result of these steps are
+Figures~\ref{fig:results_1},~\ref{fig:results_2} and~\ref{fig:results_3}
+that begin to
+approach those illustrated in the Su and Wu article.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/results01.png}
+    \caption{%
+        Melodic interval sequence of the Gossec's \emph{Gavotte}.
+    }\label{fig:results_1}
+\end{figure}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/results02.png}
+    \caption{%
+        Scaling of $p_i(r)$ with sub-cover size $r$ of \emph{Gavotte}.
+    }\label{fig:results_2}
+\end{figure}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/results03.png}
+    \caption{%
+        Variation of Hölder exponents along the melody sequence converted from
+        the \emph{Gavotte}.
+    }\label{fig:results_3}
+\end{figure}
+
 \subsection{Limitations of the method}
 
 The most dramatic limitation of this procedure and this metric of scaling in
@@ -469,10 +561,24 @@ and Wu (the Bourrée), despite being almost entirely monophonic, contains
 polyphony in measures 2, 4, and 28 (the last), but this may be an artifact of
 the editor, as some copies have a single G instead of the E chord. Either way,
 one can simplify a polyphonic melody by selecting a single constituent note
-whenever there's a simultaneous group of notes, as I did for simplifying the
+whenever there's a simultaneous group of notes, as was done for simplifying the
 Bourrée.
 
 \section{Conclusions}
+
+In conclusion, there is quite a lot of insight into the form and structure of
+music that can be gained by studying music with an appreciation of fractals.
+Fractal geometry patterns have a way of appearing in most of nature, so despite
+(most) music being intelligently designed it should not be all too surprising
+that fractals also show up in music, especially when there exist psychoacoustic
+explanations as to why humans have been composing music in certain genres and
+with certain sensibilities for melodic and harmonic consonance and dissonance
+for centuries.
+The composition of music is also accessible in a very mathematically intuitive
+and intriguing way by applying stochastic and self-scaling patterns.
+Lastly, there is much room for further research and improvement of self-scaling
+pattern analysis techniques, with applications in classifying individual pieces
+or even entire genres of music based on their different fractal dimensions.
 
 \begin{thebibliography}{9}
 \bibitem{1}

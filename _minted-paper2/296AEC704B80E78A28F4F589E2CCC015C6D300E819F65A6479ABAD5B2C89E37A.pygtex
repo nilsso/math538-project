@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{notes} \PYG{o}{=} \PYG{p}{[}
+        \PYG{c+c1}{\PYGZsh{} 1}
+        \PYG{l+s+s2}{\PYGZdq{}a\PYGZsq{}8\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}b\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}a\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}fis\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}g\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}a\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}g\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}e\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{} 2}
+        \PYG{l+s+s2}{\PYGZdq{}d4\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}b\PYGZsq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}d,2\PYGZdq{}}\PYG{p}{,}
+        \PYG{c+c1}{\PYGZsh{} 3}
+        \PYG{l+s+s2}{\PYGZdq{}g8\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}a\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}g\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}e\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}fis\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}g\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}fis\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}d\PYGZdq{}}\PYG{p}{,}
+        \PYG{c+c1}{\PYGZsh{} etc...}
+\end{Verbatim}
