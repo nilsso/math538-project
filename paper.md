@@ -167,6 +167,8 @@ this very same section (along with two other musical examples).
 
 <!--![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)-->
 
+<!-- LINK: https://www.youtube.com/watch?v=xR4IElye7eg -->
+
 <!-- SECTION ------------------------------------------------------------- -->
 # Pitch scaling: Stochastic composition
 
