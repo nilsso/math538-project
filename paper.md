@@ -54,9 +54,6 @@ dynamic changes.
 
 <!-- SECTION ------------------------------------------------------------- -->
 
-# Fractals
-
-# Fractals in music
 
 <!--
 - Talk about how Mandelbrot was interested in music
@@ -90,7 +87,7 @@ elements either mirrors or imitates the structure of the object as a whole.” S
 it is necessary that parts of a musical piece be similar to larger sections of
 the musical composition. 
 
-## Misconceptions
+
 
 <!-- SECTION ------------------------------------------------------------- -->
 # A primer on music
@@ -142,20 +139,24 @@ data points are needed to assert a linear relationship"[^2].
 # Fractal and multifractal dimension
 
 <!-- SECTION ------------------------------------------------------------- -->
+
 # Structural scaling and motivic scaling: Bach and fractals
 
-There exist many folklore about Bach and his impressive talent. There is such a
-story about his short musical piece called "The Little Fugue". One day Bach was
-challenged to a compitition by a fellow well renowned organist of the time. Bach
-and the fellow showed up for the competition at a church to play the orga 
+There are many tales of Bach's impressive talents as a composer and virtuoso musician.A biographer of Bach's also recounts the time that Bach arrived to a town in Prussia as a stranger. Upon arrival King Frederick the Great invited him to the Royal Palace to try the new pianofortes. "After he had gone on for some time, he asked the King to give him a subject for a Fugue, in order to execute it immediately without any preparation."{H.T} Speaking about this same event, Douglas Hofstadter in his book Godel, Escher, Bach: An Eternal Golden Braid states, "the ten canons in the musical offering are among the most sophisticated canons Bach ever wrote. However, curiously enough, Bach himself never wrote them out in full. This was deliberate. They were posed as puzzles to King Frederick. It was a familiar musical game of the day to give a single theme, together with some more or less tricky hints, and to let the canon based on the theme be 'discovered' by someone else."{D.R} This shows that Bach truly incorporated math into his music and that his compositions were much more than a creative thought; that they contained a mathematical complexity that retained beauty. So, it is possible to see that his music contained fractal.
 
-The first part of the fifth movement, the "Bourrée", from
+H.T. David and A. Mendel, The Bach Reader, pp.305-306.
+D.R. Hofstadter, Godel, Escher, Bach: An Eternal Golden Braid (Basic Books, 1980).
+
+Specifically, The first part of the fifth movement, the "Bourrée", from
 Johann Sebastian Bach's Cello Suite No. 3 in C Major, BWV 1009.
 
-The paper <PAPER> by <AUTHORS> is dedicated entirely to examining the scaling
+The paper Structural Scaling of Bachs Cello Suite No.3 by Harlan Brothers is dedicated entirely to examining the scaling
 characteristics within this single section of music, and the paper "Multifractal
 analyses of music sequences" by Zhi-Yuan Su and Tzuyin Wu also takes a look at
 this very same section (along with two other musical examples).
+
+![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)
+
 
 ![Bourrée notation structure](./figures/bach_cello.png)
 
