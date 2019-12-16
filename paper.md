@@ -157,6 +157,14 @@ characteristics within this single section of music, and the paper "Multifractal
 analyses of music sequences" by Zhi-Yuan Su and Tzuyin Wu also takes a look at
 this very same section (along with two other musical examples).
 
+![Bourrée notation structure](./figures/bach_cello.png)
+
+![Bourrée MIDI structure 1](./figures/bach_cello_midi01.png)
+
+![Bourrée MIDI structure 2](./figures/bach_cello_midi02.png)
+
+![Bourrée MIDI structure 3](./figures/bach_cello_midi03.png)
+
 <!--![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)-->
 
 <!-- SECTION ------------------------------------------------------------- -->
