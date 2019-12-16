@@ -208,7 +208,22 @@ data points are needed to assert a linear relationship"[^2].
 
 # Structural scaling and motivic scaling: Bach and fractals
 
-There are many tales of Bach's impressive talents as a composer and virtuoso musician.A biographer of Bach's also recounts the time that Bach arrived to a town in Prussia as a stranger. Upon arrival King Frederick the Great invited him to the Royal Palace to try the new pianofortes. "After he had gone on for some time, he asked the King to give him a subject for a Fugue, in order to execute it immediately without any preparation."{H.T} Speaking about this same event, Douglas Hofstadter in his book Godel, Escher, Bach: An Eternal Golden Braid states, "the ten canons in the musical offering are among the most sophisticated canons Bach ever wrote. However, curiously enough, Bach himself never wrote them out in full. This was deliberate. They were posed as puzzles to King Frederick. It was a familiar musical game of the day to give a single theme, together with some more or less tricky hints, and to let the canon based on the theme be 'discovered' by someone else."{D.R} This shows that Bach truly incorporated math into his music and that his compositions were much more than a creative thought; that they contained a mathematical complexity that retained beauty. So, it is possible to see that his music contained fractal.
+There are many tales of Bach's impressive talents as a composer and virtuoso
+musician.A biographer of Bach's also recounts the time that Bach arrived to a
+town in Prussia as a stranger. Upon arrival King Frederick the Great invited him
+to the Royal Palace to try the new pianofortes. "After he had gone on for some
+time, he asked the King to give him a subject for a Fugue, in order to execute
+it immediately without any preparation."{H.T} Speaking about this same event,
+Douglas Hofstadter in his book Godel, Escher, Bach: An Eternal Golden Braid
+states, "the ten canons in the musical offering are among the most sophisticated
+canons Bach ever wrote. However, curiously enough, Bach himself never wrote them
+out in full. This was deliberate. They were posed as puzzles to King Frederick.
+It was a familiar musical game of the day to give a single theme, together with
+some more or less tricky hints, and to let the canon based on the theme be
+'discovered' by someone else."{D.R} This shows that Bach truly incorporated math
+into his music and that his compositions were much more than a creative thought;
+that they contained a mathematical complexity that retained beauty. So, it is
+possible to see that his music contained fractal.
 
 H.T. David and A. Mendel, The Bach Reader, pp.305-306.
 D.R. Hofstadter, Godel, Escher, Bach: An Eternal Golden Braid (Basic Books, 1980).
@@ -216,13 +231,13 @@ D.R. Hofstadter, Godel, Escher, Bach: An Eternal Golden Braid (Basic Books, 1980
 Specifically, The first part of the fifth movement, the "Bourrée", from
 Johann Sebastian Bach's Cello Suite No. 3 in C Major, BWV 1009.
 
-The paper Structural Scaling of Bachs Cello Suite No.3 by Harlan Brothers is dedicated entirely to examining the scaling
-characteristics within this single section of music, and the paper "Multifractal
-analyses of music sequences" by Zhi-Yuan Su and Tzuyin Wu also takes a look at
-this very same section (along with two other musical examples).
+The paper Structural Scaling of Bachs Cello Suite No.3 by Harlan Brothers is
+dedicated entirely to examining the scaling characteristics within this single
+section of music, and the paper "Multifractal analyses of music sequences" by
+Zhi-Yuan Su and Tzuyin Wu also takes a look at this very same section (along
+with two other musical examples).
 
 ![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)
-
 
 ![Bourrée notation structure](./figures/bach_cello.png)
 
@@ -300,7 +315,7 @@ The formula above can be used to construct correlograms, a plot of autocorrelati
 against lag. This will give a visual into the autocorrelation structure of the
 noise.
 
-\includegraphics{CorrelogramForPinkNoise.png}
+<!--\includegraphics{CorrelogramForPinkNoise.png}-->
 Correlogram for pink noise (Bulmer)
 
 The correlogram above shows that the correlation over time does not disappear to
