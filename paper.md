@@ -36,12 +36,23 @@ patterns in music and build insight into what "fractal music" really means.
 
 ---
 
-<!-- "Introduction"? -->
+# Introduction
+
+Out of principle we must begin our discussion on fractals in music by mentioning the late Benoit Mandelbrot. Mandelbrot coined the phrase “fractal” in 1975 to describe objects that retained complexity and detail, at different scales; similar to how the photograph of a pile of rocks can look similar to the picture of a mountain, if there is nothing to provide a sense of scale{MIT}. Initially, Mandelbrot observed this in time series graphs of product prices in the economy, where if there was no scale it would be impossible to tell if the price changes were updated per minute, hour, day, etc. {MIT}. Mandelbrot also tended to speak of “roughness”{TED}. Something that was smooth would be akin to time series plot that looked like a smooth curve. A rough graph would look like a plot with many dynamic changes.  
+
+
+
 <!-- SECTION ------------------------------------------------------------- -->
 
 # Fractals
 
 # Fractals in music
+
+Mandelbrot believed in the power of the human eye to notice “roughness” {MIT}{TED}, but music provides a unique challenge, because in the moment, music is felt in a psychological sense, and is usually not observed as a whole, unless one acquires sheet music or other physical interpretation of the music as a composer intended. In fact, in the memoir book for Mandelbrot A life in Many Dimensions, Harlan Brothers wrote, “Benoit Mandelbrot always had a strong feeling that music could be viewed from a fractal perspective. However, without our eyes to guide us, how do we gain this perspective?”{ALMD} The question posed is an excellent one, and Brothers goes on to discuss that generally there are seven ways that fractals can appear in music.
+
+Before we discuss these seven ways, we would like to mention that there are several misconceptions as to what fractal music is, which Brothers discusses on his webpage{Brothers}. The most common misconception is that converting fractal images into sound produces fractal music. In many cases these transformations can hardly be classified as music and simply as noise. Another misconception is to think that iterations always cause fractals in music. This is not true in the physical sense as the lodistic map illustrates {Brothers} and it does not hold in music either. The last misconception that Brothers talks about in regards to fractal music is that of self similarity. As with fractal diagrams, self similarity is a necessary but no sufficient condition{Brothers}. He gives the example that, “ onions, spirals, and Russian dolls are not fractal; they do not contain a minimum of two matching or similar regions in which the arrangement of elements either mirrors or imitates the structure of the object as a whole.” So, it is necessary that parts of a musical piece be similar to larger sections of the musical composition. 
+
+
 
 ## Misconceptions
 
@@ -81,12 +92,17 @@ quantified:
 7. *Motivic scaling*: a motif, melodic or rhythmic, is repeated simultaneously
    at different time scales (called augmentation or diminution).
 
+Brothers also caustions: "It is important to note that, regardless of the type of scaling under consideration, in order to fulﬁll a power law relation, any inherent pattern in a group of musical elements requires the presence of a minimum of three distinct levels of scaling. This requirement reﬂects the fact that the log-log plot of a power law relation appears linear; at least three data points are needed to assert a linear relationship {Cello 3}"
+
 <!-- SECTION ------------------------------------------------------------- -->
 
 # Fractal and multifractal dimension
 
 <!-- SECTION ------------------------------------------------------------- -->
 # Structural scaling and motivic scaling: Bach and fractals
+
+There exist many folklore about Bach and his impressive talent. There is such a story about his short musical piece called "The Little Fugue". One day Bach was challenged to a compitition by a fellow well renowned organist of the time. Bach and the fellow showed up for the competition at a church to play the orga 
+
 
 The first part of the fifth movement, the "Bourrée", from
 Johann Sebastian Bach's Cello Suite No. 3 in C Major, BWV 1009.
