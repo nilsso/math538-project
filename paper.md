@@ -214,7 +214,9 @@ A  | B  | C  | Total | Note
 1  | 6  | 3  | 10    | D
 2  | 4  | 3  | 9     | C
 6  | 2  | 1  | 9     | C
-\includegraphics{TimePlotPinkNoise.png}
+
+
+<!--![Music From Fractal Noise, Micheael Bulmer](./music/TimePlotPinkNoise.png)-->
 Time plot of pink noise (Bulmer)
 
 When graphing a time plot that was produced using the dice method created by Voss,
