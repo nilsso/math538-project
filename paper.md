@@ -81,9 +81,12 @@ quantified:
 7. *Motivic scaling*: a motif, melodic or rhythmic, is repeated simultaneously
    at different time scales (called augmentation or diminution).
 
-<!-- Fractal dimension -->
+<!-- SECTION ------------------------------------------------------------- -->
 
-# Bach and fractals
+# Fractal and multifractal dimension
+
+<!-- SECTION ------------------------------------------------------------- -->
+# Structural scaling and motivic scaling: Bach and fractals
 
 The first part of the fifth movement, the "Bourrée", from
 Johann Sebastian Bach's Cello Suite No. 3 in C Major, BWV 1009.
@@ -95,15 +98,20 @@ this very same section (along with two other musical examples).
 
 ![Cello Suite No. 3 in C Major, BWV 1009, V. Bourrée I.](./music/bwv1009_bourree.png)
 
-# 
+<!-- SECTION ------------------------------------------------------------- -->
+# Pitch scaling: Stochastic composition
 
-<!-- Implementing Su and Wu -->
+- Describe the procedure used to compose Guapos and Nils
+- Analyze Guapos and Nils
+- Expand on what pitch scaling is
+- Describe how Guapos and Nils provides an example of pitch scaling fracticality
 
-# Implementing melodic interval and duration scaling measurement
+<!-- SECTION ------------------------------------------------------------- -->
+# Melodic interval and duration scaling: implementing
 
 ## Converting a melodic line into point sequences
 
-## Limitations
+## Limitations of the method
 
 The most dramatic limitation of this procedure is that it requires the musical
 material to be monophonic---only one note at a time---while the vast majority of

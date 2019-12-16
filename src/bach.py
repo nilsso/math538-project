@@ -101,8 +101,7 @@ R_mask = mask(R)
 # print(I_mask)
 # print(R_mask)
 
-# i = 300
-# plot_scaling(I_mask, 'Melody', i)
+# plot_scaling(I_mask, 'Melody')
 # plot_scaling(R_mask, 'Rhythm')
 plot_scaling2(I_mask, 'Melody')
 plt.show()
