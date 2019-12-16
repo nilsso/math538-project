@@ -2,7 +2,7 @@ import numpy as np
 import re
 
 # NOTE: Currently not handling dotted rhythms
-LY_PATTERN = re.compile(r"([a-z])(es|is)?([,'])*([0-9])*")
+LY_PATTERN = re.compile(r"([a-z])(es|is)?([,'])*(\d*)")
 
 DEGREE_MAP = {
         'c' : 0, 'd' : 2, 'e' : 4,
@@ -104,6 +104,7 @@ class Melody:
             o = relative_octave(d, pd, po) + octave_shift(o)
             v = int(v) if v else pv
             self.notes += [Note(d, o, v)]
+        # print(s, ':', str(self.notes[-1]))
 
 #! Get sequence of absolute pitch differences in melody
 # @param M Melody object
