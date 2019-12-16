@@ -106,6 +106,17 @@ this very same section (along with two other musical examples).
 - Expand on what pitch scaling is
 - Describe how Guapos and Nils provides an example of pitch scaling fracticality
 
+A  | B  | C  | Total | Note
+-- | -- | -- | --    | --
+2  | 6  | 1  | 9     | C
+2  | 6  | 5  | 13    | G
+2  | 2  | 5  | 9     | C
+2  | 6  | 2  | 10    | D
+4  | 6  | 2  | 12    | F
+1  | 6  | 3  | 10    | D
+2  | 4  | 3  | 9     | C
+6  | 2  | 1  | 9     | C
+
 <!-- SECTION ------------------------------------------------------------- -->
 # Melodic interval and duration scaling: implementing
 
