@@ -216,7 +216,7 @@ A  | B  | C  | Total | Note
 6  | 2  | 1  | 9     | C
 
 
-(./music/TimePlotPinkNoise.png)
+![Bulmer Time Series Plot](./music/TimePlotPinkNoise.png)
 Time plot of pink noise (Bulmer)
 
 When graphing a time plot that was produced using the dice method created by Voss,
