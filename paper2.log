@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  16 DEC 2019 05:49
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  16 DEC 2019 09:49
  system commands enabled.
 **paper2.tex
 (./paper2.tex
@@ -1280,7 +1280,7 @@ on of melodic in-ter-vals is self-similar,
 [4
 Missing character: There is no ’ (U+2019) in font pplr8t!
 ]
-<figures/bach_cello.png, id=99, 1130.2225pt x 426.59375pt>
+<figures/bach_cello.png, id=101, 1130.2225pt x 426.59375pt>
 File: figures/bach_cello.png Graphic file (type png)
 <use figures/bach_cello.png>
 Package luatex.def Info: figures/bach_cello.png  used on input line 230.
@@ -1291,25 +1291,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 
 LaTeX Warning: Reference `bach' on page 5 undefined on input line 255.
 
-
-LaTeX Warning: Reference `bach_scale' on page 5 undefined on input line 265.
-
 [5
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 Missing character: There is no “ (U+201C) in font pplr8t!
 Missing character: There is no ” (U+201D) in font pplr8t!
 <./figures/bach_cello.png>]
-<figures/bach_cello_midi01.png, id=112, 908.39375pt x 256.96pt>
+<figures/bach_cello_midi01.png, id=115, 908.39375pt x 256.96pt>
 File: figures/bach_cello_midi01.png Graphic file (type png)
 <use figures/bach_cello_midi01.png>
 Package luatex.def Info: figures/bach_cello_midi01.png  used on input line 271.
 (luatex.def)             Requested size: 345.0pt x 97.59091pt.
-<figures/bach_cello_midi02.png, id=113, 908.39375pt x 256.96pt>
+<figures/bach_cello_midi02.png, id=116, 908.39375pt x 256.96pt>
 File: figures/bach_cello_midi02.png Graphic file (type png)
 <use figures/bach_cello_midi02.png>
 Package luatex.def Info: figures/bach_cello_midi02.png  used on input line 272.
 (luatex.def)             Requested size: 345.0pt x 97.59091pt.
-<figures/bach_cello_midi03.png, id=114, 908.39375pt x 256.96pt>
+<figures/bach_cello_midi03.png, id=117, 908.39375pt x 256.96pt>
 File: figures/bach_cello_midi03.png Graphic file (type png)
 <use figures/bach_cello_midi03.png>
 Package luatex.def Info: figures/bach_cello_midi03.png  used on input line 273.
@@ -1321,13 +1318,13 @@ Missing character: There is no ’ (U+2019) in font pplr8t!
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 <./figures/bach_cello_midi01.png><./figures/bach_cello_midi02.png><./figures/bac
 h_cello_midi03.png>]
-<figures/pink_noise_time.png, id=124, 318.18875pt x 207.77625pt>
+<figures/pink_noise_time.png, id=128, 318.18875pt x 207.77625pt>
 File: figures/pink_noise_time.png Graphic file (type png)
 <use figures/pink_noise_time.png>
 Package luatex.def Info: figures/pink_noise_time.png  used on input line 325.
 (luatex.def)             Requested size: 345.0pt x 225.2827pt.
  [7]
-<figures/pink_noise_correlogram.png, id=135, 318.18875pt x 207.77625pt>
+<figures/pink_noise_correlogram.png, id=139, 318.18875pt x 207.77625pt>
 File: figures/pink_noise_correlogram.png Graphic file (type png)
 <use figures/pink_noise_correlogram.png>
 Package luatex.def Info: figures/pink_noise_correlogram.png  used on input line 
@@ -1380,17 +1377,17 @@ on $\OML/zplm/m/it/10 p[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r\OT1/zplm/m/n/10
 )$\T1/ppl/m/n/10 , the lo-cal Hölder
  []
 
-<figures/results01.png, id=177, 462.528pt x 346.896pt>
+<figures/results01.png, id=181, 462.528pt x 346.896pt>
 File: figures/results01.png Graphic file (type png)
 <use figures/results01.png>
 Package luatex.def Info: figures/results01.png  used on input line 527.
 (luatex.def)             Requested size: 345.0pt x 258.76335pt.
-<figures/results02.png, id=178, 462.528pt x 346.896pt>
+<figures/results02.png, id=182, 462.528pt x 346.896pt>
 File: figures/results02.png Graphic file (type png)
 <use figures/results02.png>
 Package luatex.def Info: figures/results02.png  used on input line 534.
 (luatex.def)             Requested size: 345.0pt x 258.76335pt.
-<figures/results03.png, id=179, 462.528pt x 346.896pt>
+<figures/results03.png, id=183, 462.528pt x 346.896pt>
 File: figures/results03.png Graphic file (type png)
 <use figures/results03.png>
 Package luatex.def Info: figures/results03.png  used on input line 541.
@@ -1423,29 +1420,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 627--630
 ology.com/yale/FractalMusic/
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 635.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 638.
 [15
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
 Missing character: There is no – (U+2013) in font pplr8t!
 <./figures/results03.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 635.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 638.
  (./paper2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 635.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 635.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 638.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 638.
 Package rerunfilecheck Info: File `paper2.out' has not changed.
 (rerunfilecheck)             Checksum: 8ADACA24226243BC63E15DC1FE4A9038;1012.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 635.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 638.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22415 strings out of 494413
+ 22416 strings out of 494413
  100000,662416 words of node,token memory allocated
- 1769 words of node memory still in use:
-   7 hlist, 2 vlist, 3 rule, 2 glue, 188 kern, 79 attribute, 59 glue_spec, 79 at
+ 1773 words of node memory still in use:
+   7 hlist, 2 vlist, 3 rule, 2 glue, 188 kern, 80 attribute, 59 glue_spec, 80 at
 tribute_list, 1 write, 5 pdf_action nodes
    avail lists: 1:1,2:569,3:124,4:74,5:125,6:10,7:3966,8:91,9:176,10:16,11:304
  25348 multiletter control sequences out of 65536+600000
@@ -1461,10 +1458,10 @@ mathpazo/fplmr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpa
 zo/fplmri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8
 a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper2.pdf (15 pages, 1162262 bytes).
+Output written on paper2.pdf (15 pages, 1163102 bytes).
 
-PDF statistics: 267 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 131072)
+PDF statistics: 271 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 131072)
  121 words of extra memory for PDF output out of 10000 (max. 100000000)
 
